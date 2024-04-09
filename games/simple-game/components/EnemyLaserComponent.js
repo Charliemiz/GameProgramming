@@ -10,7 +10,8 @@ class EnemyLaserComponent extends Component{
             GameObject.destroy(this.parent);
         }
 
-        let invaders = GameObject.filter("CircleGameObject")
+        
+        let invaders = GameObject.filter("PlayerGameObject")
         for(let invader of invaders){
             if(Collisions.isCircleCircleCollision(
                 {x:invader.transform.x,y:invader.transform.y},
@@ -20,11 +21,14 @@ class EnemyLaserComponent extends Component{
                 )){
                     // GameObject.destroy(invader);
                     // Globals.score++;
+                    
                     let event = {
                         origin: this,
                         dest: invader,
                         name: "laserCollision",
                     }
+                    
+                    
                     EventSystem.fireEvent(event)
                     GameObject.destroy(this.parent);
 

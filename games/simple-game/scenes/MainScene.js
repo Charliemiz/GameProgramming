@@ -28,7 +28,7 @@ class MainScene extends Scene {
       
       let circleGameObject = new PlayerGameObject()
       circleGameObject.addComponent(new KeyboardComponent())
-      circleGameObject.addComponent(new FireComponent())
+      //circleGameObject.addComponent(new FireComponent())
       circleGameObject.addComponent(new WinComponent())
       GameObject.instantiate(circleGameObject, 200, 400, 50)
       // let circleGameObject = new GameObject("CircleGameObject")

@@ -1,12 +1,12 @@
 class PlayerGameObject extends GameObject{
-    constructor(name="CircleGameObject"){
+    constructor(name="PlayerGameObject"){
         super(name);
   
     }
     start(ctx) {
         super.start(ctx)
-        this.health = 1
-        //this.addComponent(new DeathComponent())
+        this.health = 5
+        this.addComponent(new DeathComponent())
         this.addComponent(new Circle("purple", "blue"))
 
     }
