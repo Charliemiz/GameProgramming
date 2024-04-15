@@ -3,10 +3,6 @@ class WinComponent extends Component {
         super();
 
     }
-    start(){
-        
-    }
-
     update(){
         // Check if all death objects are gone
         if(Globals.numberOfDeathGameObjects === 0){
