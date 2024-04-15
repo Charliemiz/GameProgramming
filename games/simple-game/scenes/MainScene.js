@@ -1,4 +1,5 @@
 import "../components/DeathComponent.js"
+import "../components/PlayerDeathComponent.js"
 import "../components/KeyboardComponent.js"
 import "../components/FireComponent.js"
 import "../components/EnemyLaserComponent.js"
@@ -9,6 +10,7 @@ import "../components/MoveEnemyComponent.js"
 import "../components/EnemyFireComponent.js"
 
 import "../prefabs/DeathGameObject.js"
+import "../prefabs/PlayerGameObject.js"
 import "../prefabs/FlodnagGameObjects.js"
 import "../prefabs/FirstBossGameObject.js"
 import "../prefabs/PlayerGameObject.js"

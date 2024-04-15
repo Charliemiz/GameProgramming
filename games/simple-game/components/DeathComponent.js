@@ -13,7 +13,6 @@ class DeathComponent extends Component {
         
             if (event.name == "laserCollision") {
                 this.parent.health--;
-                console.log('hit')
                 if (this.parent.health <= 0) {
                     EventSystem.fireEvent({
                         origin:this.parent,

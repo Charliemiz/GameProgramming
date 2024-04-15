@@ -1,5 +1,7 @@
 import "../components/ScoreReaderComponent.js"
 import "../components/EndSceneCounterComponent.js"
+import "../components/ScoreUpdaterComponent.js"
+import "../components/KeyboardComponent.js"
 
 /** The final scene in our game */
 class DeathScene extends Scene {

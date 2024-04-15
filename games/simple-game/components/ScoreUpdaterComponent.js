@@ -7,6 +7,7 @@ class ScoreUpdaterComponent extends Component {
     if (event.name == "scoreUpdate") {
 
       Globals.score += event.origin.scoreValue
+      console.log(Globals.score)
     }
   }
   update() {
